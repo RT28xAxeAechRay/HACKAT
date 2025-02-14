@@ -103,6 +103,11 @@ function App() {
     link.click();
     document.body.removeChild(link);
   };
+  const handleRedirect = () => {
+    window.location.href = "https://forms.gle/mjKSQQnbJwatYNwi7"; 
+};
+
+  
 
   return (
     <div className="min-h-screen bg-gray-100 p-6">
@@ -112,7 +117,7 @@ function App() {
             <h1 className="text-3xl font-bold text-gray-900">Health Monitoring Dashboard</h1>
             <p className="text-gray-600 mt-1">Real-time health metrics with AI predictions</p>
           </div>
-         <button onClick={handleDownload} className="bg-blue-500 text-white px-4 py-2 rounded-md shadow">
+         <button onClick={handleRedirect} className="bg-blue-500 text-white px-4 py-2 rounded-md shadow">
             Input your data
           </button>
           <button onClick={handleDownload} className="bg-blue-500 text-white px-4 py-2 rounded-md shadow">
