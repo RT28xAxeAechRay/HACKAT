@@ -112,46 +112,9 @@ function App() {
             <h1 className="text-3xl font-bold text-gray-900">Health Monitoring Dashboard</h1>
             <p className="text-gray-600 mt-1">Real-time health metrics with AI predictions</p>
           </div>
-    import { useState } from "react";
-import { Button, Input, Modal } from "@/components/ui";
-
-export default function UserDetails() {
-  const [open, setOpen] = useState(false);
-  const [details, setDetails] = useState({ height: "", weight: "" });
-
-  const handleSubmit = () => {
-    console.log("User details:", details);
-    setOpen(false); // Close modal after submission
-  };
-
-  return (
-    <div>
-      {/* Button to Open Form */}
-      <Button onClick={() => setOpen(true)}>Input Your Details</Button>
-
-      {/* Modal for Input Form */}
-      {open && (
-        <Modal onClose={() => setOpen(false)}>
-          <h2 className="text-xl font-bold">Enter Your Details</h2>
-          <div className="mt-4">
-            <Input
-              placeholder="Height (cm)"
-              value={details.height}
-              onChange={(e) => setDetails({ ...details, height: e.target.value })}
-            />
-            <Input
-              placeholder="Weight (kg)"
-              value={details.weight}
-              onChange={(e) => setDetails({ ...details, weight: e.target.value })}
-            />
-            <Button className="mt-4" onClick={handleSubmit}>Submit</Button>
-          </div>
-        </Modal>
-      )}
-    </div>
-  );
-}
-
+         <button onClick={handleDownload} className="bg-blue-500 text-white px-4 py-2 rounded-md shadow">
+            Input your data
+          </button>
           <button onClick={handleDownload} className="bg-blue-500 text-white px-4 py-2 rounded-md shadow">
             Download Report
           </button>
