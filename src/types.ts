@@ -1,9 +1,9 @@
 export interface HealthData {
-  timestamp: Date;
+  id: string;
+  timestamp: string;
   temperature: number;
-  humidity: number;
+  heartRate: number;
   spo2: number;
-  prediction: string;
 }
 
 export interface MetricCardProps {
