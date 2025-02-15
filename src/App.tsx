@@ -237,9 +237,11 @@ function App() {
                     <h3 className="text-xl font-bold mb-1">{member.name}</h3>
                     <p className="text-emerald-400 font-medium">{member.role}</p>
                     <p className="text-gray-300 text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">{member.education}</p>
-                    <button className="mt-4 px-4 py-2 bg-white text-gray-900 rounded-lg font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-gray-100">
-                      Book Appointment
-                    </button>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScnOk8M6Yret6NvyRMPFq-bdXxrjQSdDlyq70TW6zykHtSHUQ/viewform">
+                      <button className="mt-4 px-4 py-2 bg-white text-gray-900 rounded-lg font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-gray-100">
+                        Book Appointment
+                      </button>
+                    </a>
                   </div>
                 </div>
               ))}
