@@ -95,18 +95,24 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       {/* Header */}
-      <div className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
-        <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center space-x-4">
-            <Stethoscope className="w-10 h-10" />
-            <div>
-              <h1 className="text-3xl font-bold">Health Monitoring Dashboard</h1>
-              <p className="text-blue-100 mt-1">Real-time health metrics with AI predictions</p>
-            </div>
+      <header className="relative bg-gradient-to-r from-blue-900 to-purple-900 text-white shadow-2xl overflow-hidden py-20">
+      <div className="max-w-7xl mx-auto px-10 lg:px-16 flex flex-col sm:flex-row items-center sm:justify-between space-y-8 sm:space-y-0">
+        <div className="flex items-center space-x-8 animate-fadeIn">
+          <div className="bg-white/40 p-6 rounded-full shadow-2xl transform hover:scale-110 transition duration-300">
+            <Stethoscope className="w-20 h-20 text-white" />
+          </div>
+          <div>
+            <h1 className="text-6xl font-extrabold tracking-tight leading-tight bg-gradient-to-r from-white to-amber-700 bg-clip-text text-transparent">Health Monitoring Dashboard</h1>
+            <p className="text-blue-200 mt-4 text-2xl font-light">AI-powered real-time health insights at your fingertips</p>
           </div>
         </div>
+        {/* <button className="mt-10 sm:mt-0 bg-gradient-to-r from-yellow-400 to-red-500 text-white px-10 py-4 rounded-3xl text-2xl font-bold hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+          Get Started
+        </button> */}
       </div>
-
+    </header>
+          <br></br>
+          <br></br>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
         {/* Health Data Chart */}
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
@@ -127,7 +133,8 @@ function App() {
             )}
           </div>
         </div>
-
+        <br></br>
+        <br></br>
         {/* AI Prediction Section */}
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
           <div className="bg-gradient-to-r from-gray-800 to-gray-900 px-6 py-4">
@@ -173,7 +180,6 @@ function App() {
                 />
               </div>
             </div>
-
             <div className="flex flex-col items-center space-y-4">
               <button 
                 onClick={handleAIPrediction}
@@ -181,7 +187,7 @@ function App() {
                 className="group relative inline-flex items-center justify-center px-8 py-3 font-semibold text-white transition-all duration-200 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg hover:from-blue-700 hover:to-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-70"
               >
                 {isLoading ? (
-                  <div className="flex items-center space-x-2">
+                  <div className="flex items-center space-x-2 ">
                     <div className="w-5 h-5 border-t-2 border-b-2 border-white rounded-full animate-spin"></div>
                     <span>Processing...</span>
                   </div>
@@ -206,7 +212,8 @@ function App() {
             </div>
           </div>
         </div>
-
+        <br></br>
+        <br></br>
         {/* Team Section */}
         <section className="bg-white rounded-2xl shadow-xl overflow-hidden" id="team">
           <div className="bg-gradient-to-r from-gray-800 to-gray-900 px-6 py-4">
