@@ -67,10 +67,10 @@ function App() {
   };
   const team = [
     {
-      name: 'Harshit Jangra',
+      name: 'Vitthal Choudhary',
       role: 'Cardiologist',
       education: 'M.D in Heart Transplant',
-      image: 'https://i.imgur.com/CAJxf93.jpeg'
+      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=300&h=300'
     },
     {
       name: 'Lakshay Chhabra',
@@ -79,7 +79,7 @@ function App() {
       image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=300&h=300'
     },
     {
-      name: 'Sunita Khanna',
+      name: 'Suresh Khanna',
       role: 'Dental',
       education: 'MDS/BDS',
       image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=300&h=300'
@@ -248,5 +248,3 @@ function App() {
 }
 
 export default App;
-
-
